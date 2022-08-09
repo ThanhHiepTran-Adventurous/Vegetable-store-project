@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    border: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 15vh;
+}
+
+.title{
+   text-align: start;
+    font-size: 1.5em;
+    margin: 5% 0% 0% 15%;
+}
+
+.cart-icon{
+    text-align: end;
+    margin: 5% 15% 0% 0%;
+}
+
+.shopping-cart{
+    background-color: #F5F5F5;
+    padding: 4% 3% 2% 3%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.inner-container{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     height: 85vh;
+}
+
+.left{
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.welcome-img{
+    height: 550px;
+    width: 500px;
+    object-fit: contain;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro{
+    font-size: 2.5em;
+    margin: 0% 25% 4% 0%;
+}
+
+.brief{
+    font-size: 1em;
+    margin: 0% 25% 0% 0%;
+}
+
+.order-btn{
+    border: 1.2px solid #000000;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    height: 8%;
+    margin: 5% 0% 8% 0%;
+    outline: none;
+    width: 40%;
+}
+
+.category{
+    font-size: 1.5em;
+    margin: 5% 0% 5% 8%;
+}
+
+.category-decorator{
+  border-bottom: 3px solid #000000;
+}
+
+.cart-title{
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: 0% 0% 3% 7.5%;
+}
+
+.item-summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0% 8% 0% 8%;
+    text-align: center;
+}
+
+.product-head,.amount-head,.qty-head,
+.total-cost-head,.remove-icon-head,.image-head
+{
+    display: block;
+    height: 50px;
+}
+
+.product-name,.amount,.qty,
+.total-cost,.remove-icon,.thumbnail-img{
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+.remove-icon{
+    cursor: pointer;
+}
+
+.remove-icon:hover{
+    color: #FF3031;
+}
+
+.thumb-image{
+    height: 100px;
+    object-fit: contain;
+    width: 50px; 
+}
+
+.item-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5% 4% 5% 4%;
+}
+
+.product-img{
+    height: 100%;
+    background-color: #fff;
+    object-fit: contain;
+    padding: 15% 0% 0% 0%;
+    width: 100%;
+}
+
+.name,.price{
+    margin: 0% 3% 0% 3%;
+}
+
+.item{
+    border: 1px solid #E2D0D0;
+    border-radius: .25rem;
+    height: 70%;
+    justify-self: center;
+    margin: 0%;
+    position: relative;
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+    width: 65%;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+
+  .item:hover .overlay {
+    background: rgba(0, 0, 0, .3);
+    display: block;
+  }
+
+  .add-cart-btn {
+    background-color: #4C4B4B;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 15%;
+    left:10%;
+    opacity: 0;
+    outline: none;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    transition: opacity .35s ease;
+    width: 80%;
+  }
+
+  .add-cart-btn:hover{
+      background-color: #000000;
+  }
+
+  .item:hover .add-cart-btn {
+    opacity: 1;
+  }
+
+  .cart-footer{
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #E2D0D0;
+    border-radius:.25rem;
+    display: flex;
+    height: 18%;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.plus,.minus{
+    border-radius: 3px;
+    background-color: #EBEBEB;
+    cursor: pointer;
+    height: 15%;
+    margin: 0% 5% 0% 5%;
+    padding: 3% 1.5% 3% 1.5%;
+}
+
+.order-summary{
+    display: grid;
+    float: right;
+    margin: 10% 8% 0% 0%;
+    text-align: center;
+    width: 20%;
+}
+
+.top{
+    border-top: 3px solid #000000;
+    background-color: #000000;
+    border-radius: .25rem;
+    height: 3px;
+    width: 100%;
+}
+
+.sub-total-head {
+    display: block;
+    font-size: 1em;
+    margin: 10% 0% 0% 0%;
+}
+
+.sub-total-amount{
+    font-size: 1.3em;
+}
+
+.payment-btn,.view-menu-btn {
+    background-color: #2F2E41;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10% 0% 0% 0%;
+    outline: none;
+    padding: 5% 0% 5% 0%;
+    width: 80%;
+}
+
+.view-menu-btn {
+    margin: 5% 0% 10% 0%;
+}
