@@ -41,16 +41,6 @@
         <h1 style="text-align: center">Input your information!!</h1>
 
 
-<!--        <div>
-            <ul>
-                <li><a class="active" href="https://accounts.google.com/o/oauth2/auth?scope=profile%20email&redirect_uri=http://localhost:8080/EventManagement/LoginGoogleHandler&response_type=code
-                       &client_id=428640701768-fgq8e77is2ufa6l6q758mpp9262gls0e.apps.googleusercontent.com&approval_prompt=force">
-                        <li><a class="active" href="https://accounts.google.com/o/oauth2/auth?scope=profile%20email&redirect_uri=<%=Constants.GOOGLE_REDIRECT_URI%>&response_type=code
-                               &client_id=<%=Constants.GOOGLE_CLIENT_ID%>&approval_prompt=force">  
-                                <img class src="css/img/logo-gg-new.png">
-                                Sign in with @fpt.edu.vn</a></li>
-            </ul>
-        </div>-->
 
         <div class="limiter">
             <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
