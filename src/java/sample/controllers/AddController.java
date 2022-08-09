@@ -40,6 +40,7 @@ public class AddController extends HttpServlet {
             HttpSession session = request.getSession();
             CartShopping cart = (CartShopping)session.getAttribute("CART");
             System.out.println("Cart truoc khi check: " +cart);
+            
             if(cart == null){
                 cart = new CartShopping();
             }            
